@@ -1,0 +1,106 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica';
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    background-color:#fff; 
+}
+
+.container {
+    padding: 30px 5%;
+}
+
+.logo {
+    width: 42px;
+    height: 52px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container nav h1 {
+    font-size: 30px;
+    font-weight: 100;
+    padding: 15px;
+    color: #000;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px;
+    color: #000;
+    font-weight: 300;
+    margin: 5px 3px;
+}
+
+.allPosts{
+    background-color: #fff;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom:30px;
+}
+
+.postOutline{
+    border-style: solid;
+    border-width: 1px;
+    border-color: #e8e6e6;
+    background-color: #fff;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.author {
+    padding-top: 60px;
+}
+
+.profPic{
+    vertical-align: sub;
+    height: 2%;
+    width: 2%;
+}
+
+.profName{
+    padding-left: 5px;
+    color:black;
+    font-family:Helvetica;
+}
+
+.post{
+    background-color: #fff;
+    padding-bottom: 60px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-family:Helvetica;
+}
+
+p{
+    font-family: "Helvetica";
+    line-height: 1.5;
+    font-size: 18px;
+}
