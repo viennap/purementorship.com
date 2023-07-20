@@ -145,3 +145,7 @@ p{
     line-height: 1.5;
     font-size: 18px;
 }
+
+.spacing{
+    padding-bottom: 250px;
+}

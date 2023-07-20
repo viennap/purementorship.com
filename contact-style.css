@@ -13,7 +13,7 @@ body{
     background-color:#fff; 
 }
 
-.container {
+.header {
     padding: 30px 5%;
 }
 
@@ -27,7 +27,7 @@ nav {
     justify-content: space-between;
 }
 
-.container nav h1 {
+.header nav h1 {
     font-size: 30px;
     font-weight: 100;
     padding: 15px;
@@ -87,4 +87,66 @@ nav ul li a {
 
 .footer p {
     font-weight: 300;
+}
+
+/*my stuff*/
+.contacts {
+    border-top-style:bold;
+    border-bottom-style:bold;
+    border-color:black;
+    border-width: 2px;
+    text-align:center;
+    background-color:#560537;
+    padding-top:50px;
+    padding-bottom: 50px;
+}
+
+.contacts-1{
+    width:35%;
+    border-style: solid;
+    border-color:#fff;
+    border-width:4px;
+    background-color:#D5C0CD;
+    margin: auto;
+
+    padding-top:30px;
+    padding-bottom:30px;
+}
+
+hr{
+    width:60%;
+    height: 3px;
+    margin: auto;
+    border: none;
+    background: black;
+    margin-bottom: 50px;
+}
+
+#gmail{
+    color:black;
+}
+
+.spacing{
+    padding-bottom: 300px;
+}
+
+.contacts-1 p{
+    font-family: 'Helvetica';
+    font-weight: 300;
+    font-size: 17px;
+}
+
+.faq{
+    padding-top:5%;
+    width:80%;
+    margin: auto;
+}
+
+.faq h1{
+    font-size:70px;
+}
+
+.faq h2{
+    font-weight: 500;
+    color: #560537;
 }
