@@ -21,22 +21,6 @@ body{
     width: 42px;
     height: 52px;
 }
-.left{
-    width: 50%;
-}
-.left p{
-    text-align: center;
-}
-.right{
-    width: 48%;
-    margin-right: 2%;
-    
-}
-
-.image1{
-    max-width: 100%;
-    max-height: 100%;
-}
 
 nav {
     display: flex;
@@ -76,43 +60,6 @@ nav ul li a {
     text-align: center;
 }
 
-#ourVisionHeader{
-    text-align: center;
-    font-weight: lighter;
-    font-size: 40px;
-}
-#missionStatement{
-    text-align: center;
-    font-size: auto;
-    color: #FE5E5E;
-    font-size: 20px;
-    font-weight: lighter;
-    
-    
-}
-#boxA{
-    margin: auto;
-    width: 50%
-}
-
-.hrSmall{
-    border: 1px solid black;
-    width: 4%;
-    margin: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
-     
-}
-
-.hrLong{
-    border: 1px solid black;
-    width: 70%;
-    margin: auto;
-    margin-top: 15px;
-    margin-bottom: 10px;
-     
-}
-
 .footer-logo {
     width: 60px;
     height: 75px;
@@ -141,37 +88,85 @@ nav ul li a {
 .footer p {
     font-weight: 300;
 }
-.container{
+
+/* ABOUT US (start) */
+
+.our-mission h1 {
+    text-align: center;
+    font-weight: dark;
+    font-size: 40px;
+}
+
+.our-mission p {
+    text-align: center;
+    font-size: auto;
+    color: #FE5E5E;
+    font-size: 20px;
+    font-weight: lighter;
+    margin: auto;
+    width: 50%
+}
+
+.hrSmall{
+    border: 1px solid black;
+    width: 5%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.hrLong{
+    border: 1px solid black;
+    width: 70%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.left{
+    width: 50%;
+    text-align: center;
+}
+
+.thenu-letter{
     margin: auto;
     width: 70%;
     display: flex;
     justify-content: space-between;
 }
 
-#meetText{
+.thenu-letter h2 {
     font-weight: lighter;
     margin-top: 20%;
     font-size: 30px;
 }
-#thenuText{
+
+.thenu-letter h1 {
     margin-top: 3%;
     font-weight:bold;
     font-size: 50px;
-
-
 }
-#extraText{
+
+.thenu-letter p {
     margin-top: 3%;
     font-size: 15px;
     font-weight: lighter;
 }
-#letterText{
-    margin-top: 10%;
-    font-size: 15px;
-    font-weight: lighter;
-}
-.left img{
+
+.left img {
     margin-top: 15%;
     width: 70px;
     height: 70px;
 }
+
+.right{
+    width: 48%;
+    margin-right: 2%;
+}
+
+.right img {
+    width: 75%;
+    padding-bottom: 30px;
+}
+
+/* ABOUT US (end) */
