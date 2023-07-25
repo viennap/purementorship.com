@@ -87,3 +87,34 @@ nav ul li a {
 .footer p {
     font-weight: 300;
 }
+
+
+.row.center-xs.middle-xs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.col-xs-12 {
+    flex: 0 0 10%;
+    max-width: 50%;
+    padding: 20px;
+    text-align: center;
+    vertical-align: top;
+}
+
+.logo-grid.callout img {
+    filter: grayscale(1);
+    opacity: .5;
+    transition: all .25s ease;
+}
+
+.callout.logo-grid img:hover {
+    filter: none;
+    opacity: 1;
+}
+
+.callout {
+    background-color: #f0f0f0;
+    padding: 50px;
+}
