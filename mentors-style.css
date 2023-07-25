@@ -88,8 +88,64 @@ nav ul li a {
     font-weight: 300;
 }
 
+/*mentor specific stuff*/
+.mentor_intro{
+    border-top-style:bold;
+    border-bottom-style:bold;
+    border-color:black;
+    border-width: 2px;
+    text-align:center;
+    background-color:#560537;
+    padding-top:50px;
+    padding-bottom: 50px;
+    color:white;
+    font-family:sans-serif;
+    font-weight: 400;
+    
+}
 
+.intro {
+    border-top-style:bold;
+    border-bottom-style:bold;
+    border-color:black;
+    border-width: 2px;
+    text-align: left;
+    background-color:#560537;
+    padding-left: 170px;
+    padding-right: 170px;
+    color:white;
+}
 
+.mentor_badges {
+    padding:100px;
+    background-color: rgba(255, 255, 255, 0.92);
+    display: grid;
+    gap: 150px;
+    color:#000;
+    border-color:#000;
+    border-top-right-radius: 5%;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 
+}
 
+.mentor {
+    border-color: #000;
+    background-color:rgb(252, 242, 229);
+    padding: 10px;
+    color: #000;
+    border-width: 10px 1px;
+    width: 300px;
+}
+
+a:link {
+    color:black;
+}
+
+a:visited{
+    color:black;
+}
+
+.mentor:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+  }
 
