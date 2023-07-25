@@ -125,10 +125,6 @@ hr{
     color:black;
 }
 
-.spacing{
-    padding-bottom: 300px;
-}
-
 .contacts-1 p{
     font-family: 'Helvetica';
     font-weight: 300;
@@ -145,7 +141,44 @@ hr{
     font-size:70px;
 }
 
-.faq h2{
+.collapsible {
+    background-color: rgb(225, 225, 225);
+    color: rgb(153, 153, 153);
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    
     font-weight: 500;
     color: #560537;
+    font-size: 20px;
+  }
+
+.collapsible:after {
+    content: '\0076';
+    font-weight: bold;
+    float: right;
+    font-size: 20px;
+}
+  
+.active:after {
+    content: "\028C";
+}
+
+.content {
+    padding: 0 5px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #fff;
+}
+
+.content p{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-style: italic;
+    font-size: 17px;
+    line-height:1.5;
 }
