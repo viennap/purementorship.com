@@ -13,6 +13,7 @@ body{
     background-color:#fff; 
 }
 
+/* Header */
 .header {
     padding: 30px 5%;
 }
@@ -22,6 +23,7 @@ body{
     height: 52px;
 }
 
+/* Navigation */
 nav {
     display: flex;
     justify-content: space-between;
@@ -50,9 +52,11 @@ nav ul li a {
     margin: 5px 3px;
 }
 
+/* Footer */
 .footer {
     left: 0;
     bottom: 0;
+    margin-top: 50px;
     height: 225px;
     width: 100%;
     color: black;
@@ -88,7 +92,39 @@ nav ul li a {
     font-weight: 300;
 }
 
+/* Homepage */
 
+#homepage {
+    width: 100%;
+    height: 680px;
+    background-color: rgb(245, 168, 168);
+}
+
+#why {
+    width: 100%;
+    height: 680px;
+    background-color: rgb(255, 208, 161);
+}
+
+#statistics{
+    width: 100%;
+    height: 450px;
+    background-color: rgb(246, 239, 201);
+}
+
+#testimonials{
+    width: 100%;
+    height: 450px;
+    background-color: rgb(248, 204, 204);
+}
+
+#join{
+    width: 100%;
+    height: 400px;
+    background-color: rgb(247, 231, 177);
+}
+
+/* Logo Garden */
 .row.center-xs.middle-xs {
     display: flex;
     flex-wrap: wrap;
