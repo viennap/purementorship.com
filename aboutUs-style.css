@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica';
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    background-color:#fff; 
+}
+
+.header {
+    padding: 30px 5%;
+}
+
+.logo {
+    width: 42px;
+    height: 52px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header nav h1 {
+    font-size: 30px;
+    font-weight: 100;
+    padding: 15px;
+    color: #000;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px;
+    color: #000;
+    font-weight: 300;
+    margin: 5px 3px;
+}
+
+.footer {
+    
+    left: 0;
+    bottom: 0;
+    height: 225px;
+    width: 100%;
+    color: black;
+    text-align: center;
+}
+
+.footer-logo {
+    width: 60px;
+    height: 75px;
+}
+
+.footer ul li {
+    display: inline-block;
+    padding: 5px;
+    font-weight: 300;
+    margin-top: 15px;
+}
+
+.footer ul li a {
+    color: #000;
+}
+
+.social-logo {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+    width: 40px;
+    height: 38px;
+}
+
+.footer p {
+    font-weight: 300;
+}
+
+/* ABOUT US (start) */
+
+.our-mission h1 {
+    text-align: center;
+    font-weight: dark;
+    font-size: 40px;
+}
+
+.our-mission p {
+    text-align: center;
+    font-size: auto;
+    color: #FE5E5E;
+    font-size: 20px;
+    font-weight: lighter;
+    margin: auto;
+    width: 50%
+}
+
+.hrSmall{
+    border: 1px solid black;
+    width: 5%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.hrLong{
+    border: 1px solid black;
+    width: 70%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.left{
+    width: 50%;
+    text-align: center;
+}
+
+.thenu-letter{
+    margin: auto;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.thenu-letter h2 {
+    font-weight: lighter;
+    margin-top: 20%;
+    font-size: 30px;
+}
+
+.thenu-letter h1 {
+    margin-top: 3%;
+    font-weight:bold;
+    font-size: 50px;
+}
+
+.thenu-letter p {
+    margin-top: 3%;
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+.left img {
+    margin-top: 15%;
+    width: 70px;
+    height: 70px;
+}
+
+.right{
+    width: 48%;
+    margin-right: 2%;
+}
+
+.right img {
+    width: 75%;
+    padding-bottom: 30px;
+}
+
+/* ABOUT US (end) */
