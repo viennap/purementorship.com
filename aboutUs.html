@@ -2,6 +2,7 @@
 <head>
     <title>Pure Mentorship - About Us</title>
     <link rel = "stylesheet" type="text/css" href = "aboutUs-style.css">
+    <script src="aboutUs-script.js" defer></script>
 </head>
 <body>
     <div class  = "header">
@@ -39,13 +40,38 @@
         <div class = "left">
             <h2> Meet the Founder </h2>
             <h1>Thenu Senthil</h1>
-            <p><img src="mail.png"></p>
+            <button id = "letter-icon"><img src="mail.png" ></button>
             <p>A letter from Thenu</p>
         </div>
         <div class = "right">
             <img src="ThenuHS.png">
         </div>
     </div>
+
+    <div class = "popup" id = "popup1">
+        <div class = "popup-header">
+            <h2>Meet the Founder</h2>
+            <button id = "close-button">&times;</button>
+        </div>
+        <p>"Hello! My name is Thenu and I am a nationally-recognized 
+            leader and the founder of Pure Mentorship! I strongly believe in the potential of 
+            each individual and know that support from a mentor at a young age can propel 
+            them toward a lifetime of success. I created Pure Mentorship and the mission 
+            is simple. We bring together successful and well-rounded mentors and mentees
+            who are seeking help in various areas of their lives whether they are in high school, 
+            early college, or early career. We are based out of San Jose, CA and our mentors 
+            come from all over the United States.Our mentors are working in various fields including 
+            marketing, aerospace, cybersecurity, artificial intelligence, and computer science. 
+            They come from schools just like yours and are pursuing higher education at local 
+            universities as well as ivy league colleges. Now they are working at companies such 
+            as Lockheed Martin Space, Amazon, Palo Alto Networks, NVIDIA, or their own startup! 
+            They are passionate about supporting youth individuals through their goals no matter 
+            how big or how small."</p> 
+            
+            
+            
+    </div>
+    <div id = "overlay"></div>
     
     <!-- ABOUT US (end) -->
 

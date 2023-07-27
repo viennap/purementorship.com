@@ -127,6 +127,9 @@ nav ul li a {
     width: 50%;
     text-align: center;
 }
+.left button{
+    margin-top: 15%;
+}
 
 .thenu-letter{
     margin: auto;
@@ -154,7 +157,6 @@ nav ul li a {
 }
 
 .left img {
-    margin-top: 15%;
     width: 70px;
     height: 70px;
 }
@@ -168,5 +170,62 @@ nav ul li a {
     width: 75%;
     padding-bottom: 30px;
 }
+
+
+#overlay{
+    opacity: 0;
+    pointer-events: none;
+    transition: 200ms ease-in-out;
+    left:0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: fixed;
+    background-color: rgba(0,0,0,.75);
+   
+}
+
+#overlay.active{
+    opacity: 1;
+    pointer-events: all;
+}
+
+.popup-header{
+    display: flex;
+    border-bottom: 1px solid black;
+    justify-content: space-between
+}
+
+.popup-header button{
+    margin-right: 1%;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 20px;
+    font-weight: bolder;
+
+}
+
+.popup{
+    position: fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%) scale(0);
+    transition: 200ms ease-in-out;
+    z-index: 1;
+    background-color: white;
+    width: 50vw;
+    z-index: 1;
+    position: fixed;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+.popup.active{
+    transform: translate(-50%,-50%) scale(1);
+}
+
+
 
 /* ABOUT US (end) */
