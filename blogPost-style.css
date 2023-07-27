@@ -148,3 +148,7 @@ p{
 .spacing{
     padding-bottom: 50px;
 }
+
+img{
+    max-width: 100%;
+}
