@@ -89,6 +89,34 @@ nav ul li a {
 }
 /*my stuff*/
 
-#section-1 {
-    background-color:#fff; 
+#allPosts {
+    width: 80%;
+    padding-top:20px;
+    padding-bottom:20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin:auto;
+    list-style-type: none;
+}
+
+.indivPost{
+    width: 90%;
+    border-color:black;
+    border-style: solid;
+    border-width: 1px;
+    margin:auto;
+    
+    display:flex;
+}
+
+.img {
+    flex: 1;
+}
+
+.text {
+    padding-top:20px;
+    padding-bottom:20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    flex: 1;
 }
