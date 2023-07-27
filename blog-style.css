@@ -101,7 +101,8 @@ nav ul li a {
 
 .indivPost{
     width: 90%;
-    border-color:black;
+    max-height: 400px;
+    border-color:gray;
     border-style: solid;
     border-width: 1px;
     margin:auto;
@@ -109,7 +110,12 @@ nav ul li a {
     display:flex;
 }
 
+.indivPost:hover{
+    border-color:black;
+}
+
 .img {
+    background-color: #000;
     flex: 1;
 }
 
@@ -119,4 +125,23 @@ nav ul li a {
     padding-left: 20px;
     padding-right: 20px;
     flex: 1;
+}
+
+.text a{
+    color:#000;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+
+.text a:hover{
+    color:rgb(216, 102, 71);
+}
+
+.spacing {
+    height: 50px;
+}
+
+img {
+    height: 350px;
+    width: 100%;
 }
