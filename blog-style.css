@@ -115,7 +115,6 @@ nav ul li a {
 }
 
 .img {
-    background-color: #000;
     flex: 1;
 }
 
@@ -144,9 +143,14 @@ nav ul li a {
     height: 50px;
 }
 
-img {
-    height: 348px;
+.img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img img {
     width: 100%;
+    max-height:99%;
 }
 
 .summary{
