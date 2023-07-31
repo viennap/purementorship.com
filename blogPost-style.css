@@ -109,14 +109,17 @@ nav ul li a {
     margin-right: auto;
 }
 
-.author {
-    padding-top: 60px;
+
+.author{
+    position: relative;
+    left: -135px;
+
 }
 
 .profPic{
     vertical-align: sub;
-    height: 2%;
-    width: 2%;
+    height: 17px;
+    width: 14px;
 }
 
 .profName{
@@ -132,6 +135,19 @@ nav ul li a {
     margin-left: auto;
     margin-right: auto;
 }
+.post ul {
+    padding-top: 60px;
+    display: flex;
+    justify-content:space-around;
+    list-style-type:none;
+}
+
+.date{
+    padding-top: 2px;
+    position: relative;
+    left: -370px;
+    color:rgb(173, 173, 173);
+}
 
 h1{
     padding-top: 50px;
@@ -139,7 +155,7 @@ h1{
     font-family:Helvetica;
 }
 
-p{
+#writing p{
     font-family: "Helvetica";
     line-height: 1.5;
     font-size: 18px;

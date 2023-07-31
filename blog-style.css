@@ -101,7 +101,7 @@ nav ul li a {
 
 .indivPost{
     width: 90%;
-    max-height: 350px;
+    height: 300px;
     border-color:rgb(193, 193, 193);
     border-style: solid;
     border-width: 1px;
