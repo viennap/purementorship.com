@@ -89,6 +89,57 @@ nav ul li a {
 }
 
 /*my stuff*/
+.container {
+    padding-top:10px;
+    padding-left: 80px;
+    padding-right: 60px;
+    max-width: 60%;
+    line-height:1.5;
+}
+
+.container h2 {
+    font-size: 40px;
+}
+
+input[type=text], input[type=submit] {
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+input[type=text] {
+    border: 2px solid #ccc;
+    border-top:0px;
+    border-left:0px;
+    border-right:0px;
+}
+
+input[type=submit] {
+    background-color:#ccc;
+    border: none;
+    border-radius:7px;
+    color:white;
+    font-weight:700;
+    font-size:16px;
+}
+
+input[name="name"], input[name="street"], input[name="phone"], input[name="mail"], input[name="question"], input[type=submit]{
+    width:100%;
+}
+
+input[name="city"]{
+    width:60%;
+}
+
+#space {
+    display:inline;
+}
+
+input[name="postcode"]{
+    width:34%;
+}
+
 .contacts {
     border-top-style:bold;
     border-bottom-style:bold;
@@ -125,25 +176,31 @@ hr{
     color:black;
 }
 
-.contacts-1 p{
-    font-family: 'Helvetica';
-    font-weight: 300;
-    font-size: 17px;
-}
-
 .faq{
     padding-top:5%;
-    width:80%;
+    width:100%;
     margin: auto;
 }
 
-.faq h1{
+#title {
+    padding-top:150px;
     font-size:70px;
+    color:white;
+    background-color:rgb(255, 80, 80);
+}
+
+#title h1{
+    padding-left:60px;
+}
+
+#subtitle{
+    font-weight:50;
+    font-size: 26px;
 }
 
 .collapsible {
-    background-color: rgb(225, 225, 225);
-    color: rgb(153, 153, 153);
+    background-color: #560537;
+    color: white;
     cursor: pointer;
     padding: 18px;
     width: 100%;
@@ -152,9 +209,8 @@ hr{
     outline: none;
     
     font-weight: 500;
-    color: #560537;
     font-size: 20px;
-  }
+}
 
 .collapsible:after {
     content: '\0076';
@@ -168,7 +224,7 @@ hr{
 }
 
 .content {
-    padding: 0 5px;
+    padding: 0 40px;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;

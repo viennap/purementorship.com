@@ -23,46 +23,89 @@
             </nav>
         </div>
 
-        <div class="contacts">
-            <div class="contacts-1">
-                <h1>CONTACT</h1>
-                <hr>
-                <p style="padding-bottom:20px"><strong>EMAIL</strong></p>
-                <p><a id="gmail" href="mailto: purementorship@gmail.com">purementorship@gmail.com</a></p>
-                <div style="padding-top:50px"></div>
-                <p><strong>SOCIALS</strong></p>
+        <form action="action_page.php">
+            <div class="container">
+                <h2>Get in <span style="color:rgb(255, 80, 80)">touch</span></h2>
+                <p>Pure Mentorship is constantly growing and connecting students across America. Feel free to connect with us and inquire about our programs today!</p>
+                <p style="color:rgb(255, 80, 80)">Or, scroll down to view our FAQ!</p>
+            </div>
+          
+            <div class="container" style="background-color:white">
+                <input type="text" placeholder="Contact Name" name="name" required>
+                <br>
+                <input type="text" placeholder="Street" name="street" required>
+                <br>
+                <input type="text" placeholder="City" name="city" required>
+                <div id="space" style="color:white; font-size:13px">AAA</div>
+                <input type="text" placeholder="Postcode" name="postcode" required>
+                <br>
+                <input type="text" placeholder="Contact Phone" name="phone" required>
+                <br>
+                <input type="text" placeholder="E-mail" name="mail" required>
+                <input type="text" placeholder="Ask your question" name="question" required>
+                <label>
+                    <input type="checkbox" checked="checked" name="agree"> I agree to the <span"><a href = "https://www.linkedin.com/company/pure-mentorship/mycompany/" target = "_blank" style="color:rgb(255, 80, 80)">Terms and Conditions</a></span>
+                </label>
+            </div>
+          
+            <div class="container">
+              <input type="submit" value="Submit">
+            </div>
+            <div class="container">
                 <div class = "socials">
                     <a href = "https://www.linkedin.com/company/pure-mentorship/mycompany/" target = "_blank"><img src = "LinkedInLogo.png" class = "social-logo"></a>  
                     <a href = "https://www.instagram.com/purementorship/" target = "_blank"><img src = "InstagramLogo.png" class = "social-logo"></a> 
+                    <p><a id="gmail" href="mailto: purementorship@gmail.com">purementorship@gmail.com</a></p>
                 </div>
             </div>
-        </div>
+        </form> 
 
         <div class="faq">
-            <h1>FAQs</h1>
+            <div id="title"><h1>FAQs:<span id="subtitle"> Frequently Asked Questions</span></h1></div>
             <button class="collapsible">What is the time commitment needed to be a mentor?</button>
             <div class="content">
-                <p>Mentors are paired with a mentee based on their schedule and are required to meet with their mentee at least biweekly for an hour over the course of 1 year.</p>
+                <br>
+                <p>Mentors are paired with a mentee based on their schedule and are 
+                    required to meet with their mentee at least biweekly for an hour 
+                    over the course of 1 year.</p>
+                <br>
             </div>
 
             <button class="collapsible">How will a mentee get matched to the right mentor?</button>
             <div class="content">
-                <p>Each mentee and mentor meets with the founder in order to gain a thorough understanding of their profiles and where help is needed. Each pairing is made based off compatibility and interests to ensure the mentee is getting the right support & resources from the right person.</p>
+                <p>Each mentee and mentor meets with the founder in order to gain a 
+                    thorough understanding of their profiles and where help is needed. Each pairing is made based off compatibility and interests to ensure the mentee is getting the right support & resources from the right person.</p>
             </div>
 
             <button class="collapsible">What is the internship program like?</button>
             <div class="content">
-                <p>Each intern designs their own experience by deciding what project they will work on and what skills they will employ. Interns may choose to continue with the team after a successful completion of their intern term. All interns work very closely with the founder for their projects and have lots of autonomy to create and deliver.</p>
+                <p>Each intern designs their own experience by deciding what project 
+                    they will work on and what skills they will employ. Interns 
+                    may choose to continue with the team after a successful completion 
+                    of their intern term. All interns work very closely with the 
+                    founder for their projects and have lots of autonomy to create and deliver.</p>
             </div>
 
             <button class="collapsible">How does mentorship benefit young students?</button>
             <div class="content">
-                <p>We encourage students to succeed in school. “A vast majority of educators — 95 % — say every student can benefit from having a one-on-one mentor, according to a recent survey of 1,418 grade 4-12 teachers from nonprofit Gradient Learning. Additionally, 82% said mentoring improves academic outcomes, and 83% said it helps students learn skills that support success” - K12Dive</p>
+                <p>We encourage students to succeed in school. “A vast majority of 
+                    educators — 95 % — say every student can benefit from having a 
+                    one-on-one mentor, according to a recent survey of 1,418 grade 
+                    4-12 teachers from nonprofit Gradient Learning. Additionally, 
+                    82% said mentoring improves academic outcomes, and 83% said it 
+                    helps students learn skills that support success” - K12Dive</p>
             </div>
 
             <button class="collapsible">How does mentorship benefit young professionals?</button>
             <div class="content">
-                <p>We give students the confidence to achieve in their careers. “Cornell University’s School of Industrial and Labor Relations found that mentoring programs boosted minority representation at the management level by 9% to 24% (compared to -2% to 18% with other diversity initiatives). The same study found that mentoring programs also dramatically improved promotion and retention rates for minorities and women—15% to 38% as compared to non-mentored employees.” - Mentor Resources</p>
+                <p>We give students the confidence to achieve in their careers. 
+                    “Cornell University’s School of Industrial and Labor Relations 
+                    found that mentoring programs boosted minority representation 
+                    at the management level by 9% to 24% (compared to -2% to 18% 
+                    with other diversity initiatives). The same study found that 
+                    mentoring programs also dramatically improved promotion and 
+                    retention rates for minorities and women—15% to 38% as compared
+                     to non-mentored employees.” - Mentor Resources</p>
             </div>
 
             <button class="collapsible">Will there be in-person mentoring?</button>
@@ -70,6 +113,7 @@
                 <p>Currently we operate solely online.</p>
             </div>
         </div>
+        <div style="padding: 20px"></div>
         <div class="footer">
             <a href = "home.html"><img src = "PM_Logo_WhiteBackground.png" class = "footer-logo"></a>
             <ul>
