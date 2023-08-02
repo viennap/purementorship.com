@@ -6,6 +6,11 @@
     text-decoration: none;
 }
 
+.poppins{
+    font-family: 'Poppins', sans-serif;
+}
+
+
 body{
     margin: 0;
     padding: 0;
@@ -107,6 +112,7 @@ nav ul li a {
     width: 50%
 }
 
+
 .hrSmall{
     border: 1px solid black;
     width: 5%;
@@ -123,88 +129,117 @@ nav ul li a {
     margin-bottom: 30px;
 }
 
+.thenu-letter{
+    margin: auto;
+    position: relative;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
 .left{
+    margin-top: 100px;
+    padding: 0 12%;
     width: 50%;
-    text-align: center;
+    text-align: left; 
 }
 .left button{
     margin-top: 15%;
 }
 
-.thenu-letter{
+
+.left h1 {
+    margin-top: 80px;
+    font-weight: bolder;
+    color: #560537;
+    font-size: 40px;
+}
+
+.left h2 {
+    font-weight:500;
+    color: black;
+    font-size: 20px;
+}
+
+.left p {
+    margin-top: 30px;
+    color: black;
+    font-size: 15px;
+    line-height: 1.8em;
+    font-family: 'Poppins', 'sans serif';
+    font-weight: 300;
+}
+.left button{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
     margin: auto;
-    width: 70%;
+    margin-top: 15px;
+    color:#f95b60;
+    font-size: 15px;
+    font-weight: bold;
+
+}
+.right{
+    margin-top: 100px;
     display: flex;
-    justify-content: space-between;
+    width: 50%;
+}
+.right img {
+    width:50%;
+    z-index: 2;
+    margin-bottom: 0;
 }
 
-.thenu-letter h2 {
-    font-weight: lighter;
-    margin-top: 20%;
-    font-size: 30px;
+.block{
+    position: absolute;
+    background-color: #f95b60;
+    z-index: 1;
+    left:65%;
+    width: 100%;
+    height: 100%;
+
 }
 
-.thenu-letter h1 {
-    margin-top: 3%;
-    font-weight:bold;
+.mission-section{
+    width: auto;
+    height: 300px;
+    background-color: #f8bc84;
+}
+.team-section{
+    text-align: left;
+    padding: 8%;
+    width: auto;
+    height: auto;
+}
+.team-section h1{
     font-size: 50px;
 }
-
-.thenu-letter p {
-    margin-top: 3%;
-    font-size: 15px;
+.team-section p{
     font-weight: lighter;
+    font-size: 20px;
 }
 
-.left img {
-    width: 70px;
-    height: 70px;
-}
-
-.right{
-    width: 48%;
-    margin-right: 2%;
-}
-
-.right img {
-    width: 75%;
-    padding-bottom: 30px;
-}
 
 
 #overlay{
     opacity: 0;
+    z-index: 9;
     pointer-events: none;
-    transition: 200ms ease-in-out;
     left:0;
     right: 0;
     top: 0;
     bottom: 0;
     position: fixed;
-    background-color: rgba(0,0,0,.75);
+    background-color: rgba(0,0,0,.5);
    
 }
 
 #overlay.active{
+    transition: 200ms ease-in-out;
     opacity: 1;
     pointer-events: all;
-}
-
-.popup-header{
-    display: flex;
-    border-bottom: 1px solid black;
-    justify-content: space-between
-}
-
-.popup-header button{
-    margin-right: 1%;
-    cursor: pointer;
-    border: none;
-    outline: none;
-    background: none;
-    font-size: 20px;
-    font-weight: bolder;
-
 }
 
 .popup{
@@ -212,20 +247,162 @@ nav ul li a {
     top:50%;
     left:50%;
     transform: translate(-50%,-50%) scale(0);
-    transition: 200ms ease-in-out;
-    z-index: 1;
     background-color: white;
-    width: 50vw;
-    z-index: 1;
+    z-index: 10;
+    width: 60%;
+    height: 80%;
     position: fixed;
-    border: 3px solid black;
+    border: 1px solid black;
     border-radius: 10px;
+    min-height:fit-content;
 }
 
 .popup.active{
+    transition: 200ms ease-in-out;
     transform: translate(-50%,-50%) scale(1);
 }
 
+.popup-header button{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 40px;
+    color:#560537;
+
+}
+
+.popup-header{
+    padding: 10px;
+}
+.popup-body{
+    padding: 0 10%;
+}
+.popup-body h1{
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.popup-body h1::after{
+    content: 'Thenu Senthil';
+    color: #560537;
+    font-weight: 300;
+}
+.popup-body p{
+    font-weight: lighter;
+    margin-bottom: 40px;
+    line-height: 1.8em;
+}
+
+
+.collapsible{
+    width: 100%;
+    text-align: left;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    outline: none;
+
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 32px;
+    padding: 30px 15%;
+}
+.collapsible:after {
+    content: '>';
+    font-weight: bold;
+    float: right;
+    font-size: 32px;
+}
+.collapsible.active:after {
+    content: "\0076";
+}
+
+.content{
+    padding: 0 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+.content-interns{
+    padding: 0 5%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+}
+.content-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.intern-header{
+    margin-top:10px;
+}
+.intern-header h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+
+}
+.intern-header hr{
+    border: 1px solid #f95b60;
+}
+
+.text-div{
+    padding: 10px;
+}
+
+.profile{
+    margin-top: 70px;
+    margin-bottom: 70px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 300px;
+    border-radius: 10px;
+    background-color: #ececec;
+}
+.profile img{
+
+    object-fit: cover;
+    width: 300px;
+    height: 300px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
+}
+.profile h1{
+    margin-top:8px;
+    color: #560537;
+    font-size:30px;
+    font-weight: bolder;
+}
+.profile h2{
+    font-size:15px;
+    font-style: italic;
+    font-weight: normal;
+}
+.profile h3{
+    font-size:15px;
+    font-weight: lighter;
+}
+.profile h4{
+    margin-top: 30px;
+    color: #560537;
+    font-size:18px;
+    font-weight: bolder;
+}
+  
+#exec_section{
+    background-color: #560537;
+}
+#interns_section{
+    background-color: #f95b60;
+}
+#sl_section{
+    background-color: #fcbc05;
+}
 
 
 /* ABOUT US (end) */

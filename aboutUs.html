@@ -3,6 +3,9 @@
     <title>Pure Mentorship - About Us</title>
     <link rel = "stylesheet" type="text/css" href = "aboutUs-style.css">
     <script src="aboutUs-script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class  = "header">
@@ -23,51 +26,245 @@
     
     </div>
 
-    <!-- ABOUT US (start) -->
-
-    <div class = "our-mission">
-        <h1> Our Mission </h1>
-        <hr class = "hrSmall">   
-        <p> Pure Mentorship strives to uplift students across the country to 
-            pursue otherwise inaccessible careers in <i>technology</i>, <i>engineering</i>, 
-            and <i>management</i>. We firmly believe in the importance of mentorship 
-            in helping individuals achieve their goals and reach their full potential.</p>
-    </div>
-
-    <hr class = "hrLong">
-
     <div class = "thenu-letter">
         <div class = "left">
-            <h2> Meet the Founder </h2>
-            <h1>Thenu Senthil</h1>
-            <button id = "letter-icon"><img src="mail.png" ></button>
-            <p>A letter from Thenu</p>
+            <h1 class = "poppins"> Meet the Founder </h1>
+            <h2 class = "poppins">Thenu Senthil</h2>
+            <p>"Hello! My name is Thenu and I am a nationally-recognized 
+                leader and the founder of Pure Mentorship! I strongly believe in the potential of 
+                each individual and know that support from a mentor at a young age can propel 
+                them toward a lifetime of success." </p>
+            <button id="letter-icon">READ A LETTER FROM THENU &rarr;</button>
         </div>
         <div class = "right">
             <img src="ThenuHS.png">
         </div>
+        <div class = "block"></div>   
+    </div>
+    
+    <div class = "mission-section">
+
+    </div>
+    <div class = "team-section">
+        <h1 class = "poppins">Meet the team!</h1>
+        <p>Meet the hardworking team behind Pure Mentorship! Our team is 21 members strong, consisting of students across different backgrounds with a shared passion for technology, leadership, and most importantly, mentorship. We all had various mentors growing up, and we are excited to pay this act of kindness forward to students around the country.</p>
     </div>
 
     <div class = "popup" id = "popup1">
         <div class = "popup-header">
-            <h2>Meet the Founder</h2>
             <button id = "close-button">&times;</button>
         </div>
-        <p>"Hello! My name is Thenu and I am a nationally-recognized 
-            leader and the founder of Pure Mentorship! I strongly believe in the potential of 
-            each individual and know that support from a mentor at a young age can propel 
-            them toward a lifetime of success. I created Pure Mentorship and the mission 
-            is simple. We bring together successful and well-rounded mentors and mentees
-            who are seeking help in various areas of their lives whether they are in high school, 
-            early college, or early career. We are based out of San Jose, CA and our mentors 
-            come from all over the United States.Our mentors are working in various fields including 
-            marketing, aerospace, cybersecurity, artificial intelligence, and computer science. 
-            They come from schools just like yours and are pursuing higher education at local 
-            universities as well as ivy league colleges. Now they are working at companies such 
-            as Lockheed Martin Space, Amazon, Palo Alto Networks, NVIDIA, or their own startup! 
-            They are passionate about supporting youth individuals through their goals no matter 
-            how big or how small."</p>       
+        <div class = "popup-body">
+            <h1 class = "poppins">A Letter from our Founder: </h1>
+            <p> Hello! My name is Thenu and I am a nationally-recognized 
+                leader and the founder of Pure Mentorship! I strongly believe in the potential of 
+                each individual and know that support from a mentor at a young age can propel 
+                them toward a lifetime of success. I created Pure Mentorship and the mission 
+                is simple. We bring together successful and well-rounded mentors and mentees
+                who are seeking help in various areas of their lives whether they are in high school, 
+                early college, or early career. We are based out of San Jose, CA and our mentors 
+                come from all over the United States.</p>
+            <p>
+                Our mentors are working in various fields including 
+                marketing, aerospace, cybersecurity, artificial intelligence, and computer science. 
+                They come from schools just like yours and are pursuing higher education at local 
+                universities as well as ivy league colleges. Now they are working at companies such 
+                as Lockheed Martin Space, Amazon, Palo Alto Networks, NVIDIA, or their own startup! 
+                They are passionate about supporting youth individuals through their goals no matter 
+                how big or how small.
+            </p>      
+        </div>
+         
     </div>
+
+    <button class = "collapsible" id = "exec_section"> Executive Team </button>
+    <div class = "content">
+        
+        <div class = "profile">
+            <img src="ThenuHS.png" >
+            <div class = "text-div">
+                <h1>Thenu S.</h1>
+                <h2>San Jose State University </h2>
+                <h3>Founder & Director</h3>
+                <h4>Learn More &rarr;</h4>
+            </div>
+        </div>
+        <div class = "profile">
+            <img src="PM_Logo_WhiteBackground.png" >
+            <div class = "text-div">
+                <h1>Name</h1>
+                <h2>School</h2>
+                <h3>Position</h3>
+                <h4>Learn More &rarr;</h4>
+            </div>
+        </div>
+        <div class = "profile">
+            <img src="PM_Logo_WhiteBackground.png" >
+            <div class = "text-div">
+                <h1>Name</h1>
+                <h2>School</h2>
+                <h3>Position</h3>
+                <h4>Learn More &rarr;</h4>
+            </div>
+        </div>
+        <div class = "profile">
+            <img src="PM_Logo_WhiteBackground.png" >
+            <div class = "text-div">
+                <h1>Name</h1>
+                <h2>School</h2>
+                <h3>Position</h3>
+                <h4>Learn More &rarr;</h4>
+            </div>
+        </div>
+        
+    </div>
+    
+    <button class = "collapsible" id = "interns_section"> Interns </button>
+    <div class = "content-interns">
+        <div class = "intern-header">
+            <h1>Operations</h1>
+            <hr>
+        </div>
+        <div class = "content-box">
+            <div class = "profile">
+                <img src="PM_Logo_WhiteBackground.png" >
+                <div class = "text-div">
+                    <h1>Name</h1>
+                    <h2>School</h2>
+                    <h3>Position</h3>
+                    <h4>Learn More</h4>
+                </div>
+            </div>
+            
+            <div class = "profile">
+                <img src="PM_Logo_WhiteBackground.png" >
+                <div class = "text-div">
+                    <h1>Name</h1>
+                    <h2>School</h2>
+                    <h3>Position</h3>
+                    <h4>Learn More</h4>
+                </div>
+            </div>
+            <div class = "profile">
+                <img src="PM_Logo_WhiteBackground.png" >
+                <div class = "text-div">
+                    <h1>Name</h1>
+                    <h2>School</h2>
+                    <h3>Position</h3>
+                    <h4>Learn More</h4>
+                </div>
+            </div>
+        </div>
+        <div class = "intern-header">
+            <h1>Branding and Marketing</h1>
+            <hr>
+        </div>
+        <div class = "content-box">
+            <div class = "profile">
+                <img src="PM_Logo_WhiteBackground.png" >
+                <div class = "text-div">
+                    <h1>Name</h1>
+                    <h2>School</h2>
+                    <h3>Position</h3>
+                    <h4>Learn More</h4>
+                </div>
+            </div>
+            
+            <div class = "profile">
+                <img src="PM_Logo_WhiteBackground.png" >
+                <div class = "text-div">
+                    <h1>Name</h1>
+                    <h2>School</h2>
+                    <h3>Position</h3>
+                    <h4>Learn More</h4>
+                </div>
+            </div>
+            <div class = "profile">
+                <img src="PM_Logo_WhiteBackground.png" >
+                <div class = "text-div">
+                    <h1>Name</h1>
+                    <h2>School</h2>
+                    <h3>Position</h3>
+                    <h4>Learn More</h4>
+                </div>
+            </div>
+        </div>
+        <div class = "intern-header">
+            <h1>Information Technology</h1>
+            <hr>
+        </div>
+        <div class = "content-box">
+            <div class = "profile">
+                <img src="PM_Logo_WhiteBackground.png" >
+                <div class = "text-div">
+                    <h1>Name</h1>
+                    <h2>School</h2>
+                    <h3>Position</h3>
+                    <h4>Learn More</h4>
+                </div>
+            </div>
+            
+            <div class = "profile">
+                <img src="PM_Logo_WhiteBackground.png" >
+                <div class = "text-div">
+                    <h1>Name</h1>
+                    <h2>School</h2>
+                    <h3>Position</h3>
+                    <h4>Learn More</h4>
+                </div>
+            </div>
+            <div class = "profile">
+                <img src="PM_Logo_WhiteBackground.png" >
+                <div class = "text-div">
+                    <h1>Name</h1>
+                    <h2>School</h2>
+                    <h3>Position</h3>
+                    <h4>Learn More</h4>
+                </div>
+            </div>
+            <div class = "profile">
+                <img src="PM_Logo_WhiteBackground.png" >
+                <div class = "text-div">
+                    <h1>Name</h1>
+                    <h2>School</h2>
+                    <h3>Position</h3>
+                    <h4>Learn More</h4>
+                </div>
+            </div>
+        </div>
+    </div>  
+
+    <button class = "collapsible" id = "sl_section"> Student Leaders </button>
+    <div class = "content">
+        <div class = "profile">
+            <img src="PM_Logo_WhiteBackground.png" >
+            <div class = "text-div">
+                <h1>Name</h1>
+                <h2>School</h2>
+                <h3>Position</h3>
+                <h4>Learn More</h4>
+            </div>
+        </div>
+        <div class = "profile">
+            <img src="PM_Logo_WhiteBackground.png" >
+            <div class = "text-div">
+                <h1>Name</h1>
+                <h2>School</h2>
+                <h3>Position</h3>
+                <h4>Learn More</h4>
+            </div>
+        </div>
+        <div class = "profile">
+            <img src="PM_Logo_WhiteBackground.png" >
+            <div class = "text-div">
+                <h1>Name</h1>
+                <h2>School</h2>
+                <h3>Position</h3>
+                <h4>Learn More</h4>
+            </div>
+        </div>
+    </div>  
+
     <div id = "overlay"></div>
     
     <!-- ABOUT US (end) -->
@@ -90,3 +287,29 @@
     </div>
 </body>
 </html>
+
+  <!-- 
+    <div class = "thenu-letter">
+        <div class = "left">
+            <h2> Meet the Founder </h2>
+            <h1>Thenu Senthil</h1>
+            <button id = "letter-icon"><img src="mail.png" ></button>
+            <p>A letter from Thenu</p>
+        </div>
+        <div class = "right">
+            <img src="ThenuHS.png">
+        </div>
+    </div>
+    -->
+
+        <!-- ABOUT US (start) -->
+    <!-- 
+    <div class = "our-mission">
+        <h1> Our Mission </h1>
+        <hr class = "hrSmall">   
+        <p> Pure Mentorship strives to uplift students across the country to 
+            pursue otherwise inaccessible careers in <i>technology</i>, <i>engineering</i>, 
+            and <i>management</i>. We firmly believe in the importance of mentorship 
+            in helping individuals achieve their goals and reach their full potential.</p>
+    </div>
+    -->
