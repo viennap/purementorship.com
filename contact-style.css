@@ -89,7 +89,14 @@ nav ul li a {
 }
 
 /*my stuff*/
-.container {
+form {
+    background-image: url("studentStockP.jpg");
+    background-size: 600px;
+    background-repeat: no-repeat;
+    background-position: right; 
+}
+
+#wrapper {
     padding-top:10px;
     padding-left: 80px;
     padding-right: 60px;
@@ -177,7 +184,6 @@ hr{
 }
 
 .faq{
-    padding-top:5%;
     width:100%;
     margin: auto;
 }
