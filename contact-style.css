@@ -184,7 +184,7 @@ hr{
     color:black;
 }
 
-.faq{
+#faq{
     width:100%;
     margin: auto;
 }
@@ -224,14 +224,14 @@ hr{
 }
 
 .collapsible:after {
-    content: '\0076';
+    content: '▼';
     font-weight: bold;
     float: right;
     font-size: 20px;
 }
   
 .active:after {
-    content: "\028C";
+    content: "▲";
 }
 
 .content {
@@ -243,6 +243,7 @@ hr{
     overflow: hidden;
     transition: max-height 0.2s ease-out;
     background-color: #fff;
+    font-weight: 100;
 }
 
 .content p{
