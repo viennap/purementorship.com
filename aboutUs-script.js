@@ -27,5 +27,22 @@ closeButton.addEventListener('click', ()=>{
     overlay.classList.remove('active')
 })
 
+var btns = document.getElementsByClassName("read-more-btn");
+
+for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function() {
+        this.textContent = this.textContent.includes('More') ? "Read Less" : "Learn More";
+        const text = this.previousElementSibling;
+        if (text.style.maxHeight){
+            text.style.maxHeight = null;
+        } else {
+            text.style.maxHeight = text.scrollHeight + "px";
+            var content = this.closest('.content, .content-interns');
+            content.style.maxHeight = parseFloat(content.style.maxHeight)+parseFloat(content.scrollHeight) +"px";
+        }
+    });
+}
+
+
 
 

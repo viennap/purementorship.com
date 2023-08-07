@@ -331,6 +331,15 @@ nav ul li a {
     margin-bottom: 40px;
     line-height: 1.8em;
 }
+.popup-body h5{
+    font-weight: lighter;
+    margin-left: 65%;
+}
+.popup-body img{
+    height: 50px;
+    width: auto;
+    margin-left: 65%;
+}
 
 
 .collapsible{
@@ -394,7 +403,8 @@ nav ul li a {
     margin-bottom: 70px;
     margin-left: 10px;
     margin-right: 10px;
-    width: 300px;
+    width: auto;
+    height:fit-content;
     border-radius: 10px;
     background-color: #ececec;
 }
@@ -410,6 +420,7 @@ nav ul li a {
 
 .text-div{
     padding: 10px;
+    max-width: 300px;
 }
 
 .profile h1{
@@ -425,13 +436,39 @@ nav ul li a {
 }
 .profile h3{
     font-size:15px;
+    margin-bottom: 30px;
     font-weight: lighter;
 }
-.profile h4{
-    margin-top: 30px;
+.profile .read-more-content{
+    font-size: 15px;
+    font-weight: lighter;
+    color:black;
+    max-height: 0;
+    overflow: hidden;
+    display: block;
+    transition: max-height 0.2s ease-out;
+}
+/*
+.profile .read-more-container{
+    max-height: 0;
+    overflow: hidden;
+}*/
+
+.profile button{
+    cursor: pointer;
     color: #560537;
     font-size:18px;
     font-weight: bolder;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 200ms ease-in-out;
+
+
+}
+
+.profile button:hover{
+    transform: translate(25%);
 }
   
 #exec_section{
