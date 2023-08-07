@@ -219,6 +219,10 @@ hr{
     font-size: 20px;
 }
 
+.collapsible:hover {
+    background-color: #3f0328;
+}
+
 .collapsible:after {
     content: '\0076';
     font-weight: bold;
@@ -231,6 +235,9 @@ hr{
 }
 
 .content {
+    border-bottom-width: 1px;
+    border-bottom-style:solid;
+    border-bottom-color:white;
     padding: 0 40px;
     max-height: 0;
     overflow: hidden;
