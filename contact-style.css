@@ -184,7 +184,7 @@ hr{
     color:black;
 }
 
-.faq{
+#faq{
     width:100%;
     margin: auto;
 }
@@ -219,23 +219,31 @@ hr{
     font-size: 20px;
 }
 
+.collapsible:hover {
+    background-color: #3f0328;
+}
+
 .collapsible:after {
-    content: '\0076';
+    content: '▼';
     font-weight: bold;
     float: right;
     font-size: 20px;
 }
   
 .active:after {
-    content: "\028C";
+    content: "▲";
 }
 
 .content {
+    border-bottom-width: 1px;
+    border-bottom-style:solid;
+    border-bottom-color:white;
     padding: 0 40px;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
     background-color: #fff;
+    font-weight: 100;
 }
 
 .content p{
