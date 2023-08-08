@@ -179,7 +179,10 @@ nav ul li a {
     color: #000;
     border-color: #000;
     margin: 25px;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
+    size: 100% 100%;
+    position: relative;
 }
 
 .mentor img {
@@ -211,4 +214,6 @@ a:visited {
 .mentor:hover {
     border: 5px solid #560537;
     border-radius: 15px;
+    transform: scale(1.1);
+  transform-origin: center
 }
