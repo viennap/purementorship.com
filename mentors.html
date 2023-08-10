@@ -3,7 +3,9 @@
 
 <head>
     <title> Pure Mentorship </title>
-    <link rel="stylesheet" type="text/css" href="mentors-style.css">
+    <link rel="stylesheet" href="mentors-style.css">
+    <script src="mentors-script.js"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700;800&display=swap"
@@ -53,8 +55,24 @@
         <button class="apply">Apply today!</button>
     </div>
 
+    <div class="filter">
+        <div id="filter-box">
+            <input type="filter-textbox" id="filter-input" placeholder="Select Expertise" />
+            <button id="filter-btn">Filter</button>
+        </div>
+
+        <div id="btn">
+            <button class="btn-val active" onclick="filterSelection('all')"> All </button>
+            <button class="btn-val" onclick="filterSelection('DIA')"> Data Analytics, Information Systems, & Aerospace </button>
+            <button class="btn-val" onclick="filterSelection('SA')"> Software Engineering & AI/Machine Learning </button>
+            <button class="btn-val" onclick="filterSelection('EM')"> Engineering Management & Marketing </button>
+        </div>
+
+        <div id="mentors"></div>
+    </div>
+
     <div class="mentor_badges">
-        <div class="mentor">
+        <div class="mentor DIA">
             <a href="mentor individual pages/mentor-AadityJ.html">
                 <img class src="mentors headshots/aadityJ.jpg" style="width:100%">
                 <div class=text-div>
@@ -66,7 +84,7 @@
             </a>
         </div>
 
-        <div class="mentor">
+        <div class="mentor EM">
             <a href="mentor individual pages/mentor-AnishaK.html">
                 <img class src="mentors headshots/anishaK.jpg" style="width:100%">
                 <div class="text-div">
@@ -79,7 +97,7 @@
 
         </div>
 
-        <div class="mentor">
+        <div class="mentor SA">
             <a href="mentor individual pages/mentor-EstherC.html">
                 <img class src="mentors headshots/estherC.jpg" style="width:100%">
                 <div class="text-div">
@@ -91,7 +109,7 @@
             </a>
         </div>
 
-        <div class="mentor">
+        <div class="mentor SA">
             <a href="mentor individual pages/mentor-HarunaO.html">
                 <img class src="mentors headshots/harunaO.jpg" style="width:100%">
                 <div class="text-div">
@@ -103,7 +121,7 @@
             </a>
         </div>
 
-        <div class="mentor">
+        <div class="mentor DIA">
             <a href="mentor individual pages/mentor-JosephB.html">
                 <img class src="mentors headshots/josephB.jpg" style="width:100%">
                 <div class="text-div">
@@ -115,7 +133,7 @@
             </a>
         </div>
 
-        <div class="mentor">
+        <div class="mentor DIA">
             <a href="mentor individual pages/mentor-LeoS.html">
                 <img class src="mentors headshots/leoS.jpg" style="width:100%">
                 <div class="text-div">
@@ -127,7 +145,7 @@
             </a>
         </div>
 
-        <div class="mentor">
+        <div class="mentor DIA">
             <a href="mentor individual pages/mentor-MarcosV.html">
                 <img class src="mentors headshots/marcosV.png" style="width:100%">
                 <div class="text-div">
@@ -139,7 +157,7 @@
             </a>
         </div>
 
-        <div class="mentor">
+        <div class="mentor SA">
             <a href="mentor individual pages/mentor-MichaelS.html">
                 <img class src="mentors headshots/michaelS.jpg" style="width:100%">
                 <div class="text-div">
@@ -151,7 +169,7 @@
             </a>
         </div>
 
-        <div class="mentor">
+        <div class="mentor EM">
             <a href="mentor individual pages/mentor-RiddhiK.html">
                 <img class src="mentors headshots/riddhiK.jpg" style="width:100%">
                 <div class="text-div">
@@ -163,7 +181,7 @@
             </a>
         </div>
 
-        <div class="mentor">
+        <div class="mentor DIA">
             <a href="mentor individual pages/mentor-RominaT.html">
                 <img class src="mentors headshots/rominaT.jpg" style="width:100%">
                 <div class="text-div">

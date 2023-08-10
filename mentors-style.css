@@ -4,6 +4,7 @@
     font-family: 'Helvetica';
     box-sizing: border-box;
     text-decoration: none;
+    border: none;
 }
 
 body {
@@ -118,7 +119,7 @@ nav ul li a {
 }
 
 .apply {
-    background-color: #ececec;
+    background-color: #fff;
     font-size: 18px;
     font-weight: 100;
     padding: 10px;
@@ -130,7 +131,7 @@ nav ul li a {
     margin-top: 30px;
 }
 
-.mentor-badges img {
+.mentor_badges img {
 
     object-fit: cover;
     width: 300px;
@@ -183,6 +184,7 @@ nav ul li a {
     grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
     size: 100% 100%;
     position: relative;
+    overflow: hidden;
 }
 
 .mentor img {
@@ -195,12 +197,17 @@ nav ul li a {
 
 .mentor {
     border-color: #000;
-    background-color: #ececec;
+    background-color: #fff;
     color: #000;
     width: 300px;
     object-fit: cover;
     border-radius: 10px;
     border-spacing: 100px;
+   display: none;
+}
+
+.show {
+    display: block;
 }
 
 a:link {
@@ -214,4 +221,55 @@ a:visited {
 .mentor:hover {
     transform: scale(1.1);
     transform-origin: center
+}
+
+.filter {
+    width: 95%;
+    margin-top: 50px;
+    text-align: center;
+}
+
+#filter-box {
+    margin: 1em 0;
+}
+
+#filter-box input {
+    background-color: transparent;
+    width: 40%;
+    border-bottom: 2px solid gray;
+    padding: 1em 0.3em;
+    outline: none;
+}
+
+#filter-box input:focus {
+    border-bottom-color: #560537;
+}
+
+#filter-box button {
+    padding: 1em 2em;
+    margin-left: 1em;
+    background-color: #560537;
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 0.5em;
+}
+
+.btn-val {
+    border: 2px solid #560537;
+    padding: 1em 2.2em;
+    border-radius: 3em;
+    background-color: transparent;
+    color: #560537;
+    cursor: pointer;
+    outline: none; 
+}
+
+.btn-val:hover {
+    background-color: #560537c4;
+    color: #fff;
+}
+
+.btn-val.active {
+    background-color: #560537 !important;
+    color: #fff !important;
 }
