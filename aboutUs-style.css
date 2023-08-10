@@ -10,7 +10,6 @@
     font-family: 'Poppins', sans-serif;
 }
 
-
 body{
     margin: 0;
     padding: 0;
@@ -55,6 +54,15 @@ nav ul li a {
     margin: 5px 3px;
 }
 
+.current-page-header{
+    
+    color:#560537 !important;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color:#FE5E5E;
+    text-decoration-thickness: 3px;
+}
+
 .footer {
     
     left: 0;
@@ -94,8 +102,10 @@ nav ul li a {
     font-weight: 300;
 }
 
+
 /* ABOUT US (start) */
 
+/* TOP SECTION (start)*/
 .top-section{
     position: relative;
     background-position: center;
@@ -135,39 +145,9 @@ nav ul li a {
     margin-top: 30px;
     margin-left:30px;
 }
-.our-mission h1 {
-    text-align: center;
-    font-weight: dark;
-    font-size: 40px;
-}
+/* TOP SECTION (end)*/
 
-.our-mission p {
-    text-align: center;
-    font-size: auto;
-    color: #FE5E5E;
-    font-size: 20px;
-    font-weight: lighter;
-    margin: auto;
-    width: 50%
-}
-
-
-.hrSmall{
-    border: 1px solid black;
-    width: 5%;
-    margin: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.hrLong{
-    border: 1px solid black;
-    width: 70%;
-    margin: auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
+/* MEET THE FOUNDER (start)*/
 .thenu-letter{
     margin: auto;
     position: relative;
@@ -178,7 +158,7 @@ nav ul li a {
 
 .left{
     margin-top: 100px;
-    padding: 0 12%;
+    padding: 0 8%;
     width: 50%;
     text-align: left; 
 }
@@ -188,25 +168,32 @@ nav ul li a {
 
 
 .left h1 {
-    margin-top: 80px;
+    margin-top: 60px;
     font-weight: bolder;
     color: #560537;
-    font-size: 40px;
+    font-size: 50px;
 }
 
 .left h2 {
-    font-weight:500;
+    font-weight:600;
     color: black;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .left p {
-    margin-top: 30px;
+    margin-top: 50px;
     color: black;
-    font-size: 15px;
+    font-size: 18px;
     line-height: 1.8em;
     font-family: 'Poppins', 'sans serif';
     font-weight: 300;
+}
+.left span{
+    color: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    font-family: inherit;
+    font-weight: 500;
 }
 .left button{
     cursor: pointer;
@@ -238,110 +225,42 @@ nav ul li a {
     left:65%;
     width: 35%;
     height: 100%;
-
 }
+/* MEET THE FOUNDER (end)*/
 
+/* Gradient divider*/
 .mission-section{
     width: auto;
     height: 100px;
-    background-color: #f8bc84;
+    background-image:linear-gradient(to bottom,rgba(248, 188, 132,1),rgba(86,5,55,0));
+
 }
+
+/* MEET THE TEAM (start)*/
 .team-section{
     text-align: left;
-    padding: 8%;
+    padding: 8% 10%;
     width: auto;
     height: auto;
 }
 .team-section h1{
     font-size: 50px;
+    color: #560537;
+    font-family: 'Poppins', sans-serif;
+}
+.team-section img{
+    width: 42px;
+    height: 52px;
 }
 .team-section p{
     font-weight: lighter;
     font-size: 20px;
+    line-height: 2em;
 }
+/* MEET THE TEAM (end)*/
 
 
-
-#overlay{
-    opacity: 0;
-    z-index: 9;
-    pointer-events: none;
-    left:0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    position: fixed;
-    background-color: rgba(0,0,0,.5);
-   
-}
-
-#overlay.active{
-    transition: 200ms ease-in-out;
-    opacity: 1;
-    pointer-events: all;
-}
-
-.popup{
-    position: fixed;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%) scale(0);
-    background-color: white;
-    z-index: 10;
-    width: 60%;
-    height: 80%;
-    position: fixed;
-    border: 1px solid black;
-    border-radius: 10px;
-    min-height:fit-content;
-}
-
-.popup.active{
-    transition: 200ms ease-in-out;
-    transform: translate(-50%,-50%) scale(1);
-}
-
-.popup-header button{
-    cursor: pointer;
-    border: none;
-    outline: none;
-    background: none;
-    font-size: 40px;
-    color:#560537;
-
-}
-
-.popup-header{
-    padding: 10px;
-}
-.popup-body{
-    padding: 0 10%;
-}
-.popup-body h1{
-    font-weight: 500;
-    margin-bottom: 30px;
-}
-.popup-body h1::after{
-    content: 'Thenu Senthil';
-    color: #560537;
-    font-weight: 300;
-}
-.popup-body p{
-    font-weight: lighter;
-    margin-bottom: 40px;
-    line-height: 1.8em;
-}
-.popup-body h5{
-    font-weight: lighter;
-    margin-left: 65%;
-}
-.popup-body img{
-    height: 50px;
-    width: auto;
-    margin-left: 65%;
-}
-
-
+/* COLLAPSIBLE SECTIONS (start)*/
 .collapsible{
     width: 100%;
     text-align: left;
@@ -366,6 +285,18 @@ nav ul li a {
     content: "\0076";
 }
 
+#exec_section{
+    background-color: #560537;
+}
+#interns_section{
+    background-color: #f95b60;
+}
+#sl_section{
+    background-color: #fcbc05;
+}
+/* COLLAPSIBLE SECTIONS (end)*/
+
+/* COLLAPSIBLE SECTIONS CONTENT */
 .content{
     padding: 0 5%;
     display: flex;
@@ -398,6 +329,7 @@ nav ul li a {
     border: 1px solid #f95b60;
 }
 
+/* PROFILE SECTIONS (start)*/
 .profile{
     margin-top: 70px;
     margin-bottom: 70px;
@@ -448,12 +380,11 @@ nav ul li a {
     display: block;
     transition: max-height 0.2s ease-out;
 }
-/*
-.profile .read-more-container{
-    max-height: 0;
-    overflow: hidden;
-}*/
-
+.profile span{
+    font-size: 15px;
+    font-weight: bold;
+    color:black;
+}
 .profile button{
     cursor: pointer;
     color: #560537;
@@ -463,23 +394,90 @@ nav ul li a {
     border: none;
     outline: none;
     transition: 200ms ease-in-out;
-
-
 }
-
 .profile button:hover{
     transform: translate(25%);
 }
+/* PROFILE SECTIONS (end)*/
   
-#exec_section{
-    background-color: #560537;
+/* OVERLAY (start) */
+#overlay{
+    opacity: 0;
+    z-index: 9;
+    pointer-events: none;
+    left:0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: fixed;
+    background-color: rgba(0,0,0,.5); 
 }
-#interns_section{
-    background-color: #f95b60;
+#overlay.active{
+    transition: 200ms ease-in-out;
+    opacity: 1;
+    pointer-events: all;
 }
-#sl_section{
-    background-color: #fcbc05;
+/* OVERLAY (end) */
+
+/* POPUP (start) */
+.popup{
+    position: fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%) scale(0);
+    background-color: white;
+    z-index: 10;
+    width: 60%;
+    height: 80%;
+    position: fixed;
+    border: 1px solid black;
+    border-radius: 10px;
+    min-height:fit-content;
 }
+.popup.active{
+    transition: 200ms ease-in-out;
+    transform: translate(-50%,-50%) scale(1);
+}
+.popup-header button{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 40px;
+    color:#560537;
+
+}
+.popup-header{
+    padding: 10px;
+}
+.popup-body{
+    padding: 0 10%;
+}
+.popup-body h1{
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.popup-body h1::after{
+    content: 'Thenu Senthil';
+    color: #560537;
+    font-weight: 300;
+}
+.popup-body p{
+    font-weight: lighter;
+    margin-bottom: 40px;
+    line-height: 1.8em;
+}
+.popup-body h5{
+    font-weight: lighter;
+    margin-left: 65%;
+}
+.popup-body img{
+    height: 50px;
+    width: auto;
+    margin-left: 65%;
+}
+/* POPUP (end) */
+
 
 
 /* ABOUT US (end) */

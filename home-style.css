@@ -52,6 +52,15 @@ nav ul li a {
     margin: 5px 3px;
 }
 
+.current-page-header{
+    
+    color:#560537 !important;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color:#FE5E5E;
+    text-decoration-thickness: 3px;
+}
+
 /* Footer */
 .footer {
     left: 0;
