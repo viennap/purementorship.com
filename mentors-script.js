@@ -1,18 +1,11 @@
-window.onload = () => {
-    filterSelection("all");
-}
 filterSelection("all")
 function filterSelection(c) {
     var x, i;
     x = document.getElementsByClassName("mentor");
-    if (c == "all") {
-        c = "";
-    }
+    if (c == "all") c = "";
     for (i = 0; i < x.length; i++) {
       removeClass(x[i], "show");
-      if (x[i].className.indexOf(c) > -1) {
-        addClass(x[i], "show");
-      }
+      if (x[i].className.indexOf(c) > -1) addClass(x[i], "show");
     }
   }
   
@@ -47,4 +40,4 @@ for (var i = 0; i < btns.length; i++) {
     current[0].className = current[0].className.replace(" active", "");
     this.className += " active";
   });
-}
+  }

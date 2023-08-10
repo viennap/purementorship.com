@@ -51,15 +51,6 @@ nav ul li a {
     margin: 5px 3px;
 }
 
-.current-page-header{
-    
-    color:#560537 !important;
-    font-weight: bold;
-    text-decoration: underline;
-    text-decoration-color:#FE5E5E;
-    text-decoration-thickness: 3px;
-}
-
 .footer {
     left: 0;
     bottom: 0;
@@ -140,7 +131,7 @@ nav ul li a {
     margin-top: 30px;
 }
 
-.mentor_badges img {
+.mentor-badges img {
 
     object-fit: cover;
     width: 300px;
@@ -279,6 +270,6 @@ a:visited {
 }
 
 .btn-val.active {
-    background-color: #560537 !important;
-    color: #fff !important;
+    background-color: #560537;
+    color: #fff;
 }
