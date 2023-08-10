@@ -1,17 +1,20 @@
-* {
+*{
     margin: 0;
     padding: 0;
     font-family: 'Helvetica';
     box-sizing: border-box;
     text-decoration: none;
-    border: none;
 }
 
-body {
+.poppins{
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
     margin: 0;
     padding: 0;
     font-size: 15px;
-    background-color: #fff;
+    background-color:#fff; 
 }
 
 .header {
@@ -51,7 +54,15 @@ nav ul li a {
     margin: 5px 3px;
 }
 
-.footer {
+.current-page-header{
+    color:#560537 !important;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color:#FE5E5E;
+    text-decoration-thickness: 3px;
+}
+
+.footer { 
     left: 0;
     bottom: 0;
     height: 225px;
@@ -95,6 +106,8 @@ nav ul li a {
     font-family: 'Poppins', sans-serif;
 }
 
+/* Mentor Program Introduction starts */
+
 .mentor_intro {
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.728), 0px -2px 5px rgba(0, 0, 0, 0.728);
     border-top-style: bold;
@@ -131,6 +144,10 @@ nav ul li a {
     margin-top: 30px;
 }
 
+/* Mentor Program Introduction ends */
+
+/* Card Layout starts */
+
 .mentor-badges img {
 
     object-fit: cover;
@@ -140,6 +157,8 @@ nav ul li a {
     border-top-right-radius: 10px;
 
 }
+
+/* Information in each card */
 
 .text-div h2 {
     padding: 4px;
@@ -172,6 +191,10 @@ nav ul li a {
     font-size: 30px;
 }
 
+/* Information in card ends */
+
+/* Positioning of cards in screen */
+
 .mentor_badges {
     padding: 100px;
     background-color: rgba(255, 255, 255, 0.92);
@@ -186,6 +209,8 @@ nav ul li a {
     position: relative;
     overflow: hidden;
 }
+
+/* Card images */
 
 .mentor img {
     object-fit: cover;
@@ -206,9 +231,13 @@ nav ul li a {
     display: none;
 }
 
+/* Show the filtered cards */
+
 .show {
     display: block;
 }
+
+/* End of displaying filtered cards */
 
 a:link {
     color: black;
@@ -218,10 +247,14 @@ a:visited {
     color: black;
 }
 
+/* Animation when card is hovered */
+
 .mentor:hover {
     transform: scale(1.1);
     transform-origin: center
 }
+
+/* Filter UI */
 
 .filter {
     width: 95%;
@@ -239,6 +272,9 @@ a:visited {
     border-bottom: 2px solid gray;
     padding: 1em 0.3em;
     outline: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
 }
 
 #filter-box input:focus {
