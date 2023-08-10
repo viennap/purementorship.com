@@ -1,4 +1,4 @@
-* {
+*{
     margin: 0;
     padding: 0;
     font-family: 'Helvetica';
@@ -6,11 +6,15 @@
     text-decoration: none;
 }
 
-body {
+.poppins{
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
     margin: 0;
     padding: 0;
     font-size: 15px;
-    background-color: #fff;
+    background-color:#fff; 
 }
 
 .header {
@@ -51,7 +55,6 @@ nav ul li a {
 }
 
 .current-page-header{
-    
     color:#560537 !important;
     font-weight: bold;
     text-decoration: underline;
@@ -59,7 +62,7 @@ nav ul li a {
     text-decoration-thickness: 3px;
 }
 
-.footer {
+.footer { 
     left: 0;
     bottom: 0;
     height: 225px;
@@ -103,6 +106,8 @@ nav ul li a {
     font-family: 'Poppins', sans-serif;
 }
 
+/* Mentor Program Introduction starts */
+
 .mentor_intro {
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.728), 0px -2px 5px rgba(0, 0, 0, 0.728);
     border-top-style: bold;
@@ -127,7 +132,7 @@ nav ul li a {
 }
 
 .apply {
-    background-color: #ececec;
+    background-color: #fff;
     font-size: 18px;
     font-weight: 100;
     padding: 10px;
@@ -139,6 +144,10 @@ nav ul li a {
     margin-top: 30px;
 }
 
+/* Mentor Program Introduction ends */
+
+/* Card Layout starts */
+
 .mentor-badges img {
 
     object-fit: cover;
@@ -148,6 +157,8 @@ nav ul li a {
     border-top-right-radius: 10px;
 
 }
+
+/* Information in each card */
 
 .text-div h2 {
     padding: 4px;
@@ -180,6 +191,10 @@ nav ul li a {
     font-size: 30px;
 }
 
+/* Information in card ends */
+
+/* Positioning of cards in screen */
+
 .mentor_badges {
     padding: 100px;
     background-color: rgba(255, 255, 255, 0.92);
@@ -192,7 +207,10 @@ nav ul li a {
     grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
     size: 100% 100%;
     position: relative;
+    overflow: hidden;
 }
+
+/* Card images */
 
 .mentor img {
     object-fit: cover;
@@ -204,13 +222,22 @@ nav ul li a {
 
 .mentor {
     border-color: #000;
-    background-color: #ececec;
+    background-color: #fff;
     color: #000;
     width: 300px;
     object-fit: cover;
     border-radius: 10px;
     border-spacing: 100px;
+    display: none;
 }
+
+/* Show the filtered cards */
+
+.show {
+    display: block;
+}
+
+/* End of displaying filtered cards */
 
 a:link {
     color: black;
@@ -220,7 +247,65 @@ a:visited {
     color: black;
 }
 
+/* Animation when card is hovered */
+
 .mentor:hover {
     transform: scale(1.1);
     transform-origin: center
+}
+
+/* Filter UI */
+
+.filter {
+    width: 95%;
+    margin-top: 50px;
+    text-align: center;
+}
+
+#filter-box {
+    margin: 1em 0;
+}
+
+#filter-box input {
+    background-color: transparent;
+    width: 40%;
+    border-bottom: 2px solid gray;
+    padding: 1em 0.3em;
+    outline: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+#filter-box input:focus {
+    border-bottom-color: #560537;
+}
+
+#filter-box button {
+    padding: 1em 2em;
+    margin-left: 1em;
+    background-color: #560537;
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 0.5em;
+}
+
+.btn-val {
+    border: 2px solid #560537;
+    padding: 1em 2.2em;
+    border-radius: 3em;
+    background-color: transparent;
+    color: #560537;
+    cursor: pointer;
+    outline: none;
+}
+
+.btn-val:hover {
+    background-color: #560537c4;
+    color: #fff;
+}
+
+.btn-val.active {
+    background-color: #560537;
+    color: #fff;
 }
