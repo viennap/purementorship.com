@@ -157,6 +157,7 @@ nav ul li a {
 }
 
 .left{
+    position: relative;
     margin-top: 100px;
     padding: 0 8%;
     width: 50%;
@@ -168,7 +169,7 @@ nav ul li a {
 
 
 .left h1 {
-    margin-top: 60px;
+    margin-top: 0;
     font-weight: bolder;
     color: #560537;
     font-size: 50px;
@@ -205,7 +206,14 @@ nav ul li a {
     color:#f95b60;
     font-size: 15px;
     font-weight: bold;
+    z-index: 10;
 
+}
+.left img{
+    position: absolute;
+    pointer-events: none;
+    left:-5%;
+    bottom:-3%;
 }
 .right{
     margin-top: 100px;
@@ -226,6 +234,7 @@ nav ul li a {
     width: 35%;
     height: 100%;
 }
+
 /* MEET THE FOUNDER (end)*/
 
 /* Gradient divider*/
@@ -399,6 +408,20 @@ nav ul li a {
     transform: translate(25%);
 }
 /* PROFILE SECTIONS (end)*/
+
+.bottom-section{
+    position: relative;
+    background-color:antiquewhite;
+    width:auto;
+    height: 300px;
+}
+.bottom-section img{
+    position: absolute;
+    pointer-events: none;
+    right:-20px;
+    bottom:-80px;
+
+}
   
 /* OVERLAY (start) */
 #overlay{
