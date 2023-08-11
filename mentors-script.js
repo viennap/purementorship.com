@@ -1,3 +1,12 @@
+/* open the application to be paired up with a mentor in a new tab */
+
+window.open(
+  'https://forms.gle/VHN7YdL9PmzPDQKA8',
+  '_blank',
+);
+
+/* filter by clicking on buttons */
+
 filterSelection("all")
 function filterSelection(c) {
   var x, i;
